@@ -139,3 +139,16 @@ Chrome wasn't connected, so production facts came from the Wayback Machine (web.
 **Later:** a Go backend lead endpoint for the forms (Q11), with CORS (Q25).
 
 **CNAME (2026-11-26):** the `CNAME` file (`smartsolar.com.vn`) is added. When Pages deploys through GitHub Actions, GitHub ignores this file, so the custom domain must also be set in repo Settings → Pages → Custom domain. Setting it there makes the github.io URL redirect to the domain.
+
+## Case studies (2026-11-26)
+
+These pages were built from a shared claude.ai artifact (listing plus the One Piano case study, in both languages):
+- `case-studies/` and `case-studies/one-piano/`
+- `en/case-studies/` and `en/case-studies/one-piano/`
+
+How it's put together:
+- **Page structure:** the site's own header and footer, with the content inside `<main class="cs">`, styled by `case-studies.css` with the site's tokens.
+- **Menu:** "Dự án tiêu biểu" / "Case Studies" is added after the news link in the header and footer of every page.
+- **Images:** in `a/OnePianoCaseStudy/`, resized by `npm run images`.
+- **Removed for now:** the category filters (bring them back once there are 3+ published case studies) and One Piano's website link (the URL is unknown).
+- **Placeholders:** the cards for Everyhalf, Moon Suzu and Việt Thắng are marked "Coming soon".

@@ -63,4 +63,28 @@
   <url>
     <loc>https://smartsolar.com.vn/smartsolar-tim-doi-tac-epc-dien-mat-troi-cho-trai-tom/</loc>
   </url>
+  <url>
+    <loc>https://smartsolar.com.vn/case-studies/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://smartsolar.com.vn/case-studies/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/case-studies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/case-studies/" />
+  </url>
+  <url>
+    <loc>https://smartsolar.com.vn/en/case-studies/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://smartsolar.com.vn/case-studies/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/case-studies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/case-studies/" />
+  </url>
+  <url>
+    <loc>https://smartsolar.com.vn/case-studies/one-piano/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://smartsolar.com.vn/case-studies/one-piano/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/case-studies/one-piano/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/case-studies/one-piano/" />
+  </url>
+  <url>
+    <loc>https://smartsolar.com.vn/en/case-studies/one-piano/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://smartsolar.com.vn/case-studies/one-piano/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/case-studies/one-piano/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/case-studies/one-piano/" />
+  </url>
 </urlset>
