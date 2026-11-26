@@ -152,3 +152,19 @@ How it's put together:
 - **Images:** in `a/OnePianoCaseStudy/`, resized by `npm run images`.
 - **Removed for now:** the category filters (bring them back once there are 3+ published case studies) and One Piano's website link (the URL is unknown).
 - **Placeholders:** the cards for Everyhalf, Moon Suzu and Việt Thắng are marked "Coming soon".
+
+## Electricity price tool (2026-11-26)
+
+These pages were built from a second shared artifact:
+- `gia-dien/` (menu label "Giá điện")
+- `en/electricity-prices/` (menu label "Electricity prices")
+
+What's in it:
+- **Sections:** tariff tables, the 3-question quiz, the bill calculator and the time-of-use chart, shown as tabs under the page title (`#bang-gia`, `#gia-cua-toi`, `#tinh-hoa-don`, `#khung-gio`).
+- **Code:** data and logic live in `gia-dien.js` (shared by both languages, which reads `<html lang>`); styles in `gia-dien.css`.
+- **Pre-rendered prices:** the default tariff view (commercial, current prices) is written into both pages' HTML. **When the tariffs change, edit `G` in `gia-dien.js`, then run `npm run prerender`.** Otherwise visitors without JavaScript, and search engines, see the old prices.
+- **Savings rate:** fixed at 15% and labelled "from 15%". The case study shows 30%.
+- **Sign-up:** the artifact's email/phone form is replaced by a "Follow on Zalo" button (no backend yet).
+- **Header button:** the yellow "Tính toán mức tiết kiệm" / "Calculate your savings" button on every page now opens `…#tinh-hoa-don`.
+- **`site.css` (new, linked on every page):** keeps the six-item header on one line between 1024 and 1399px. Between 1024 and 1149px it hides the header button.
+- **Open:** someone at SmartSolar must check the tariff figures and the QĐ numbers against the official decisions before launch.

@@ -87,4 +87,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/case-studies/one-piano/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/case-studies/one-piano/" />
   </url>
+  <url>
+    <loc>https://smartsolar.com.vn/gia-dien/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://smartsolar.com.vn/gia-dien/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/electricity-prices/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/gia-dien/" />
+  </url>
+  <url>
+    <loc>https://smartsolar.com.vn/en/electricity-prices/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://smartsolar.com.vn/gia-dien/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartsolar.com.vn/en/electricity-prices/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartsolar.com.vn/gia-dien/" />
+  </url>
 </urlset>
