@@ -137,3 +137,5 @@ Chrome wasn't connected, so production facts came from the Wayback Machine (web.
 - Submit the sitemap to Search Console.
 
 **Later:** a Go backend lead endpoint for the forms (Q11), with CORS (Q25).
+
+**CNAME (2026-11-26):** the `CNAME` file (`smartsolar.com.vn`) is added. When Pages deploys through GitHub Actions, GitHub ignores this file, so the custom domain must also be set in repo Settings → Pages → Custom domain. Setting it there makes the github.io URL redirect to the domain.
