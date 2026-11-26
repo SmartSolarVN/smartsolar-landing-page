@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Publish only the site. Repo-only files (docs, scripts, tooling) and the
+      # error pages GitHub Pages can't serve (401, 500) stay out of the artifact.
+      - name: Collect site files
+        run: |
+          mkdir _site
+          rsync -a \
+            --exclude '.git/' --exclude '.github/' --exclude '.gitignore' \
+            --exclude 'docs/' --exclude 'scripts/' --exclude 'node_modules/' \
+            --exclude 'package.json' --exclude 'package-lock.json' \
+            --exclude '401.html' --exclude '500.html' \
+            --exclude '_site/' \
+            ./ _site/
+          test ! -e _site/docs
+          test -f _site/index.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

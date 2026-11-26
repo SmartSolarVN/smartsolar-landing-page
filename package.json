@@ -1,0 +1,12 @@
+{
+  "name": "smartsolar-landing-page",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/resize-images.mjs",
+    "serve": "npx --yes serve@14.2.4 ."
+  },
+  "devDependencies": {
+    "sharp": "0.34.4"
+  }
+}

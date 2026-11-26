@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smartsolar.com.vn/sitemap.xml
